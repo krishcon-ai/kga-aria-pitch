@@ -367,7 +367,7 @@ footer strong{color:var(--text-mid)}
     <h1>The <em>AI Intelligence Layer</em><br>for Insurance Operations</h1>
     <div class="hero-sub-head">Not replacing your core platform. Making it dramatically smarter.</div>
     <p class="hero-desc">
-      KGA ARIA embeds <strong>41+ specialized AI agents</strong> into claims adjudication, policy underwriting, and billing collections — sitting alongside Guidewire, Duck Creek, or any existing system without changing a single line of core code.
+      KGA ARIA embeds <strong>41+ specialized AI agents</strong> — powered by <strong style="color:#a78bfa">Anthropic Claude</strong> — into claims adjudication, policy underwriting, and billing collections, with live bidirectional Guidewire integration and zero changes to your core system.
     </p>
     <div class="hero-actions">
       <a href="#platform" class="btn btn-primary">Explore the Platform</a>
@@ -375,9 +375,9 @@ footer strong{color:var(--text-mid)}
     </div>
 
     <div class="badges-row">
-      <div class="badge-item"><span class="dot dot-blue"></span><strong>Microsoft</strong> Cloud AI Partner</div>
-      <div class="badge-item"><span class="dot dot-teal"></span><strong>Anthropic</strong> Claude for Startups</div>
-      <div class="badge-item"><span class="dot dot-amber"></span><strong>Guidewire</strong> Integration-Ready <em style="font-size:.7rem;opacity:.6;font-style:normal">(Partnership Planned)</em></div>
+      <div class="badge-item" style="border-color:rgba(139,92,246,.45);background:rgba(139,92,246,.1)"><span class="dot" style="background:var(--purple-lt)"></span><strong style="color:var(--purple-lt)">Anthropic Claude</strong> — Primary AI Engine</div>
+      <div class="badge-item" style="border-color:rgba(59,130,246,.35);background:rgba(59,130,246,.07)"><span class="dot dot-blue"></span><strong style="color:var(--blue-lt)">Microsoft Azure</strong> — Cloud Infrastructure</div>
+      <div class="badge-item"><span class="dot dot-amber"></span><strong>Guidewire</strong> Live Integration <em style="font-size:.7rem;opacity:.6;font-style:normal">(Partnership Planned)</em></div>
       <div class="badge-item"><span class="dot dot-amber"></span><strong>Duck Creek</strong> Integration-Ready <em style="font-size:.7rem;opacity:.6;font-style:normal">(Partnership Planned)</em></div>
     </div>
 
@@ -484,7 +484,7 @@ footer strong{color:var(--text-mid)}
             <li>Denial / Closure / Partial Approval Letter Agents</li>
           </ul>
         </div>
-        <div class="pc-footer"><strong>Integration-Ready:</strong> Guidewire ClaimCenter · Duck Creek Claims</div>
+        <div class="pc-footer"><strong>Live Integration:</strong> Guidewire ClaimCenter (bidirectional) · Duck Creek Claims · Compliance Audit &amp; Governance Gate</div>
       </div>
 
       <div class="pc pc-policy">
@@ -770,7 +770,7 @@ footer strong{color:var(--text-mid)}
       <div class="partner-card">
         <div class="partner-head">
           <div class="partner-name">Guidewire</div>
-          <span class="partner-status status-planned">Integration Ready · Partnership Planned</span>
+          <span class="partner-status status-active">Live Integration · Partnership Planned</span>
         </div>
         <div class="partner-sub">ClaimCenter · PolicyCenter · BillingCenter</div>
         <div class="partner-adapters">
@@ -781,6 +781,9 @@ footer strong{color:var(--text-mid)}
           <span class="padapter">OAuth 2.0 (Keystone) ✓</span>
           <span class="padapter">HMAC Webhook Auth ✓</span>
           <span class="padapter">MCP Bridge — 24 Tools ✓</span>
+          <span class="padapter">Live Data Adapter ✓</span>
+          <span class="padapter">Write-back Queue ✓</span>
+          <span class="padapter">Unified Extractor ✓</span>
         </div>
       </div>
       <div class="partner-card">
@@ -845,13 +848,15 @@ footer strong{color:var(--text-mid)}
         <div class="tech-item">Pydantic v2 — validated structured outputs</div>
         <div class="tech-item">Python 3.10+</div>
       </div>
-      <div class="tech-card">
-        <span class="tech-label">AI &amp; Agent Orchestration</span>
-        <div class="tech-item">Claude Sonnet 4.6 (Anthropic) — default</div>
+      <div class="tech-card" style="border-color:rgba(139,92,246,.3);background:rgba(139,92,246,.05)">
+        <span class="tech-label" style="color:var(--purple-lt)">AI &amp; Agent Orchestration</span>
+        <div class="tech-item" style="color:var(--purple-lt);font-weight:700">claude-sonnet-4-6 (Anthropic) — Primary</div>
         <div class="tech-item">Claude tool_use — structured JSON enforcement</div>
+        <div class="tech-item">200K token context window per call</div>
+        <div class="tech-item">Constitutional AI — enterprise safety layer</div>
         <div class="tech-item">CrewAI — multi-agent crew orchestration</div>
         <div class="tech-item">LangGraph — policy lifecycle state machine</div>
-        <div class="tech-item">Azure OpenAI / OpenAI — alternate providers</div>
+        <div class="tech-item">Azure OpenAI — alternate provider</div>
       </div>
       <div class="tech-card">
         <span class="tech-label">Security &amp; Identity</span>
@@ -863,9 +868,11 @@ footer strong{color:var(--text-mid)}
       <div class="tech-card">
         <span class="tech-label">Integration &amp; Data</span>
         <div class="tech-item">Guidewire MCP Bridge — 24 tools (CC · PC · BC)</div>
+        <div class="tech-item">Guidewire Live Data Adapter — bidirectional sync</div>
+        <div class="tech-item">Guidewire Write-back Queue — structured result return</div>
+        <div class="tech-item">Guidewire Unified Extractor — multi-module data</div>
         <div class="tech-item">Guidewire Cloud API v2 — OAuth 2.0 + HMAC webhooks</div>
         <div class="tech-item">Duck Creek webhook adapters — 3 modules</div>
-        <div class="tech-item">pandas + openpyxl — Excel data loading</div>
         <div class="tech-item">Claude prompt caching — cost &amp; latency</div>
       </div>
       <div class="tech-card">
@@ -976,6 +983,12 @@ footer strong{color:var(--text-mid)}
         <div class="tl-desc">Azure App Service deployment confirmed operational with fault-tolerant sub-app startup and unified demo. Guidewire MCP Bridge shipped — 24 tools exposing ClaimCenter, PolicyCenter, and BillingCenter to Claude via MCP protocol. Azure Marketplace SaaS listing ready with Starter / Professional / Enterprise plans and per-agent-call metering. Dedicated Guidewire Cloud API v2 auth module (OAuth 2.0 Keystone + HMAC-SHA256 webhook signature validation). Specialized engine modules added for Claims (settlement, coverage, communication, advanced fraud) and Billing (dunning, reconciliation, commission, payment strategy, inquiry).</div>
       </div>
       <div class="tl-item">
+        <div class="tl-dot done"></div>
+        <div class="tl-date">JUNE 23, 2026</div>
+        <div class="tl-title">Guidewire Bidirectional Live Sync · Compliance Audit · Governance Gate <span class="tl-badge tl-done">✓ Complete</span></div>
+        <div class="tl-desc">Guidewire Live Data Adapter deployed — real-time bidirectional data flow between ARIA and ClaimCenter/PolicyCenter/BillingCenter. Write-back Queue enables structured AI outputs to return to Guidewire automatically. Unified Extractor consolidates multi-module Guidewire data in a single call. Compliance Audit engine and Governance Gate added to ARIA Claims — every AI decision now runs through a policy compliance check and governance approval layer before surfacing to adjusters. Test suite established across all three platforms. Platform now production-hardened for enterprise onboarding.</div>
+      </div>
+      <div class="tl-item">
         <div class="tl-dot progress"></div>
         <div class="tl-date">H2 2026 TARGET</div>
         <div class="tl-title">First Pilot Customer Onboarded <span class="tl-badge tl-prog">In Progress</span></div>
@@ -998,21 +1011,22 @@ footer strong{color:var(--text-mid)}
     <h2>Ready to Add AI Intelligence<br>to Insurance Operations?</h2>
     <p>KGA ARIA is available for pilot engagements, proof-of-concept deployments, and partnership discussions. Start with a single agent. Scale to the enterprise suite. Zero core system changes required.</p>
     <div class="cta-actions">
-      <a href="mailto:rakesh.sharma@krishconconsulting.com?subject=KGA ARIA Pilot Inquiry" class="btn btn-primary">Request a Pilot Engagement</a>
-      <a href="mailto:rakesh.sharma@krishconconsulting.com?subject=KGA ARIA Partnership" class="btn btn-outline">Partnership Discussion</a>
+      <a href="mailto:rakesh.sharma@krishcons.com?subject=KGA ARIA Pilot Inquiry" class="btn btn-primary">Request a Pilot Engagement</a>
+      <a href="mailto:rakesh.sharma@krishcons.com?subject=KGA ARIA Partnership" class="btn btn-outline">Partnership Discussion</a>
     </div>
 
     <div class="ask-grid" style="max-width:800px;margin:48px auto 0">
       <div class="ask-col">
         <h4>What We Bring</h4>
         <ul>
-          <li>41+ production-ready AI agents across Claims, Policy, and Billing</li>
+          <li>41+ production-ready AI agents powered by <strong>claude-sonnet-4-6 (Anthropic)</strong></li>
+          <li>Guidewire bidirectional live sync — Live Data Adapter, Write-back Queue, Unified Extractor</li>
           <li>Guidewire MCP Bridge — 24 tools across ClaimCenter, PolicyCenter, BillingCenter</li>
-          <li>Guidewire and Duck Creek integration adapters — OAuth 2.0, HMAC webhooks, built and tested</li>
+          <li>Compliance Audit engine &amp; Governance Gate — every AI decision policy-validated before surfacing</li>
           <li>Azure Marketplace SaaS listing — Starter / Professional / Enterprise plans with metered billing</li>
           <li>Enterprise auth: JWT + Azure AD, RBAC, multi-tenant isolation</li>
           <li>30+ years of P&amp;C insurance domain expertise</li>
-          <li>Microsoft Cloud AI + Anthropic partner ecosystem</li>
+          <li>Anthropic Claude partner + Microsoft Cloud AI partner ecosystems</li>
           <li>Azure App Service — deployed and operational today</li>
         </ul>
       </div>
