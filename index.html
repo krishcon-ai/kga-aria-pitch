@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>KGA ARIA — AI Intelligence Layer for Insurance Operations</title>
-<meta name="description" content="KGA ARIA embeds 41+ specialized AI agents powered by Anthropic Claude into claims, policy, and billing operations — with live Guidewire integration and zero core system changes.">
+<meta name="description" content="KGA ARIA embeds 49 specialized AI agents powered by Anthropic Claude into policy, billing, and claims operations — with live bidirectional Guidewire integration and zero core system changes.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -189,7 +189,7 @@ nav{position:sticky;top:0;z-index:100;background:rgba(15,17,23,.92);backdrop-fil
 .tech-item{font-size:.82rem;color:var(--text-mid);padding:4px 0;border-bottom:1px solid rgba(255,255,255,.03)}
 
 /* ── EXPERTISE ── */
-.cred-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.cred-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
 .cred-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:24px}
 .cred-icon{font-size:1.8rem;margin-bottom:12px;display:block}
 .cred-card h4{font-family:'Montserrat',sans-serif;font-size:13px;font-weight:700;color:var(--text);margin-bottom:12px}
@@ -273,7 +273,7 @@ footer p{font-size:.8rem;color:var(--text-dim);line-height:1.8}
     <h1>The <em>AI Intelligence Layer</em><br>for Insurance Operations</h1>
     <div class="hero-sub-head">Not replacing your core platform. Making it dramatically smarter.</div>
     <p class="hero-desc">
-      KGA ARIA embeds <strong>41+ specialized AI agents</strong> — powered by <strong style="color:#a78bfa">Anthropic Claude</strong> — into claims adjudication, policy underwriting, and billing collections, with live bidirectional Guidewire integration and zero changes to your core system.
+      KGA ARIA embeds <strong>49 specialized AI agents</strong> — powered by <strong style="color:#a78bfa">Anthropic Claude</strong> — into policy underwriting, billing collections, and claims adjudication, backed by a tenant-isolated governance gate and write-back layer shared across all three platforms, with live bidirectional Guidewire integration and zero changes to your core system.
     </p>
     <div class="hero-actions">
       <a href="#platform" class="btn btn-primary">Explore the Platform</a>
@@ -285,24 +285,52 @@ footer p{font-size:.8rem;color:var(--text-dim);line-height:1.8}
         <span class="dot" style="background:var(--purple-lt)"></span>
         <strong style="color:var(--purple-lt)">Anthropic Claude</strong> — Primary AI Engine
       </div>
+      <div class="badge-item" style="border-color:rgba(139,92,246,.45);background:rgba(139,92,246,.1)">
+        <span class="dot" style="background:var(--purple-lt)"></span>
+        <strong style="color:var(--purple-lt)">Anthropic Startup Partner</strong>
+      </div>
+      <div class="badge-item" style="border-color:rgba(0,120,212,.5);background:rgba(0,120,212,.1)">
+        <span class="dot" style="background:#60b8ff"></span>
+        <strong style="color:#60b8ff">Azure Marketplace</strong> — <span style="color:#6ee7b7;font-weight:700">Live ✓</span>
+      </div>
       <div class="badge-item" style="border-color:rgba(59,130,246,.35);background:rgba(59,130,246,.07)">
         <span class="dot dot-blue"></span>
-        <strong style="color:var(--blue-lt)">Microsoft Azure</strong> — Cloud Infrastructure
+        <strong style="color:var(--blue-lt)">Microsoft Cloud AI Partner</strong>
+      </div>
+      <div class="badge-item" style="border-color:rgba(59,130,246,.35);background:rgba(59,130,246,.07)">
+        <span class="dot dot-blue"></span>
+        <strong style="color:var(--blue-lt)">Microsoft Startup Partner</strong>
+      </div>
+      <div class="badge-item" style="border-color:rgba(255,153,0,.45);background:rgba(255,153,0,.08)">
+        <span class="dot" style="background:#ffb347"></span>
+        <strong style="color:#ffb347">AWS Marketplace</strong> — <span style="color:var(--amber)">Infrastructure Complete · Listing Pending</span>
+      </div>
+      <div class="badge-item" style="border-color:rgba(255,153,0,.45);background:rgba(255,153,0,.08)">
+        <span class="dot" style="background:#ffb347"></span>
+        <strong style="color:#ffb347">AWS Activate Partner</strong>
+      </div>
+      <div class="badge-item" style="border-color:rgba(66,133,244,.45);background:rgba(66,133,244,.08)">
+        <span class="dot" style="background:#4285f4"></span>
+        <strong style="color:#8ab4f8">Google Startup Partner</strong>
       </div>
       <div class="badge-item">
         <span class="dot dot-amber"></span>
-        <strong>Guidewire</strong> Live Integration <em style="font-size:.7rem;opacity:.6;font-style:normal">(Partnership Planned)</em>
+        <strong>Guidewire</strong> Live Integration
       </div>
       <div class="badge-item">
         <span class="dot dot-amber"></span>
-        <strong>Duck Creek</strong> Integration-Ready <em style="font-size:.7rem;opacity:.6;font-style:normal">(Partnership Planned)</em>
+        <strong>Duck Creek</strong> Integration-Ready
+      </div>
+      <div class="badge-item">
+        <span class="dot dot-amber"></span>
+        <strong>Guidewire &amp; Duck Creek</strong> Formal Partnership — In Progress
       </div>
     </div>
 
     <div class="hero-stats">
-      <div class="h-stat"><div class="h-stat-num"><b>41</b>+</div><div class="h-stat-lbl">AI Agents</div></div>
+      <div class="h-stat"><div class="h-stat-num"><b>49</b></div><div class="h-stat-lbl">AI Agents</div></div>
       <div class="h-stat"><div class="h-stat-num"><b>3</b></div><div class="h-stat-lbl">Sub-Platforms</div></div>
-      <div class="h-stat"><div class="h-stat-num"><b>75</b>+</div><div class="h-stat-lbl">REST Endpoints</div></div>
+      <div class="h-stat"><div class="h-stat-num"><b>160</b>+</div><div class="h-stat-lbl">REST Endpoints</div></div>
       <div class="h-stat"><div class="h-stat-num"><b>6</b></div><div class="h-stat-lbl">Integration Adapters</div></div>
       <div class="h-stat"><div class="h-stat-num"><b>0</b></div><div class="h-stat-lbl">Core Changes Needed</div></div>
     </div>
@@ -318,17 +346,17 @@ footer p{font-size:.8rem;color:var(--text-dim);line-height:1.8}
     <div class="ps-grid">
       <div class="ps-col problem">
         <div class="ps-head">✕ &nbsp; Today's Reality</div>
-        <div class="ps-item"><div class="ps-icon">✕</div><p>Adjusters manually review 50+ claims per day — risk scores, fraud signals, and severity estimates applied inconsistently, if at all</p></div>
         <div class="ps-item"><div class="ps-icon">✕</div><p>Underwriting renewal decisions vary by individual — no systematic AI risk scoring, no documented reasoning trail, no consistent premium guidance</p></div>
         <div class="ps-item"><div class="ps-icon">✕</div><p>Collections teams prioritize by gut feel — no risk-based scoring, no AI-generated outreach strategy, no dunning intelligence</p></div>
+        <div class="ps-item"><div class="ps-icon">✕</div><p>Adjusters manually review 50+ claims per day — risk scores, fraud signals, and severity estimates applied inconsistently, if at all</p></div>
         <div class="ps-item"><div class="ps-icon">✕</div><p>Regulatory letters drafted from scratch every time — compliance is inconsistent, slow, and error-prone at scale</p></div>
         <div class="ps-item"><div class="ps-icon">✕</div><p>Adding AI to existing platforms takes 12–18 months, requires core system changes, and depends on vendor release cycles</p></div>
       </div>
       <div class="ps-col solution">
         <div class="ps-head">✓ &nbsp; The KGA ARIA Difference</div>
-        <div class="ps-item"><div class="ps-icon">✓</div><p>Every claim pre-scored by a 6-agent AI pipeline — FNOL intake through orchestrated decision — before the adjuster opens the file</p></div>
-        <div class="ps-item"><div class="ps-icon">✓</div><p>A 3-agent underwriting crew (Risk Analyst · Underwriting Specialist · Decision Manager) produces structured renewal decisions with documented reasoning</p></div>
-        <div class="ps-item"><div class="ps-icon">✓</div><p>8 specialized billing agents — each independently callable — cover collections risk, payment strategy, dunning, reconciliation, fraud, and commission</p></div>
+        <div class="ps-item"><div class="ps-icon">✓</div><p>A 4-agent underwriting crew (Risk Analyst · Underwriting Specialist · Decision Manager · Underwriting Fraud Referral Agent) produces structured renewal decisions with documented reasoning</p></div>
+        <div class="ps-item"><div class="ps-icon">✓</div><p>15 specialized billing agents — each independently callable — cover collections risk, payment strategy, dunning, reconciliation, fraud, and commission</p></div>
+        <div class="ps-item"><div class="ps-icon">✓</div><p>Every claim pre-scored by a 6-agent AI pipeline — intake through orchestrated decision — before the adjuster opens the file</p></div>
         <div class="ps-item"><div class="ps-icon">✓</div><p>Regulatory-compliant letters (Denial · Closure · Partial Approval) generated instantly with policy citations and appeal rights</p></div>
         <div class="ps-item"><div class="ps-icon">✓</div><p>Deployed as a webhook layer alongside any core system — integration in days, rollback in minutes, zero core system changes</p></div>
       </div>
@@ -345,37 +373,12 @@ footer p{font-size:.8rem;color:var(--text-dim);line-height:1.8}
     <p class="s-sub">Each ARIA module is a fully self-contained FastAPI application with its own agent ensemble, REST API, and integration adapters. Deploy all three as an enterprise suite — or any one standalone.</p>
 
     <div class="platform-grid">
-      <div class="pc pc-claims">
-        <div class="pc-top">
-          <span class="pc-port">Port 8000 &nbsp;·&nbsp; ARIA Claims</span>
-          <div class="pc-name">ARIA Claims</div>
-          <div class="pc-desc">AI-powered adjuster workspace — FNOL through settlement, closure, and regulatory communication</div>
-          <div class="pc-count"><span class="pc-count-dot"></span>16 AI Agents</div>
-        </div>
-        <div class="pc-body">
-          <div class="pc-agents-label">Key Agents</div>
-          <ul class="pc-agent-list">
-            <li>FNOL Intake &amp; Triage Agent</li>
-            <li>Coverage Verification Agent</li>
-            <li>Risk Scoring Agent</li>
-            <li>Fraud Signal Agent</li>
-            <li>Severity &amp; Payout Agent</li>
-            <li>Orchestrator Decision Agent</li>
-            <li>Payment Calculation Agent</li>
-            <li>Subrogation Detection Agent</li>
-            <li>Closure Checklist Agent</li>
-            <li>Denial / Closure / Partial Approval Letter Agents</li>
-          </ul>
-        </div>
-        <div class="pc-footer"><strong>Live Integration:</strong> Guidewire ClaimCenter (bidirectional) · Duck Creek Claims · Compliance Audit &amp; Governance Gate</div>
-      </div>
-
       <div class="pc pc-policy">
         <div class="pc-top">
           <span class="pc-port">Port 8001 &nbsp;·&nbsp; ARIA Policy</span>
           <div class="pc-name">ARIA Policy</div>
           <div class="pc-desc">AI-powered underwriter workspace — submission through issuance, endorsement, and cancellation</div>
-          <div class="pc-count"><span class="pc-count-dot"></span>8 AI Agents</div>
+          <div class="pc-count"><span class="pc-count-dot"></span>14 AI Agents</div>
         </div>
         <div class="pc-body">
           <div class="pc-agents-label">Key Agents</div>
@@ -383,22 +386,24 @@ footer p{font-size:.8rem;color:var(--text-dim);line-height:1.8}
             <li>Senior P&amp;C Risk Analyst Agent</li>
             <li>Underwriting Specialist Agent</li>
             <li>Renewal Decision Manager Agent</li>
-            <li>Submission Analysis Agent</li>
-            <li>Policy Structured Analysis Agent</li>
-            <li>Endorsement Analysis Agent</li>
+            <li>Underwriting Fraud Referral Agent</li>
+            <li>Submission Risk Assessment Agent</li>
+            <li>Endorsement Impact Agent</li>
             <li>Cancellation Assessment Agent</li>
-            <li>Policy Narrative Agent</li>
+            <li>Renewal Retention &amp; Cross-Sell Agent</li>
+            <li>Product Eligibility &amp; Placement Agent</li>
+            <li>Policy Structured Analysis &amp; Narrative Agents</li>
           </ul>
         </div>
-        <div class="pc-footer"><strong>Integration-Ready:</strong> Guidewire PolicyCenter · Duck Creek Policy</div>
+        <div class="pc-footer"><strong>Integration-Ready:</strong> Guidewire PolicyCenter · Duck Creek Policy · Automated Declarations Page generation</div>
       </div>
 
       <div class="pc pc-billing">
         <div class="pc-top">
           <span class="pc-port">Port 8002 &nbsp;·&nbsp; ARIA Billing</span>
           <div class="pc-name">ARIA Billing</div>
-          <div class="pc-desc">AI-powered billing &amp; collections workspace — 10 independently callable specialized agents</div>
-          <div class="pc-count"><span class="pc-count-dot"></span>10 AI Agents</div>
+          <div class="pc-desc">AI-powered billing &amp; collections workspace — 15 independently callable specialized agents</div>
+          <div class="pc-count"><span class="pc-count-dot"></span>15 AI Agents</div>
         </div>
         <div class="pc-body">
           <div class="pc-agents-label">Key Agents</div>
@@ -411,9 +416,41 @@ footer p{font-size:.8rem;color:var(--text-dim);line-height:1.8}
             <li>Billing Fraud Detection Agent</li>
             <li>Commission &amp; Agency Agent</li>
             <li>Dunning &amp; Retention Agent</li>
+            <li>Premium Audit Agent</li>
+            <li>Refund &amp; Return Premium Agent</li>
+            <li>Payment Method Risk Agent</li>
           </ul>
         </div>
         <div class="pc-footer"><strong>Integration-Ready:</strong> Guidewire BillingCenter · Duck Creek Billing</div>
+      </div>
+
+      <div class="pc pc-claims">
+        <div class="pc-top">
+          <span class="pc-port">Port 8000 &nbsp;·&nbsp; ARIA Claims</span>
+          <div class="pc-name">ARIA Claims</div>
+          <div class="pc-desc">AI-powered adjuster workspace — FNOL through settlement, closure, and regulatory communication</div>
+          <div class="pc-count"><span class="pc-count-dot"></span>18 AI Agents</div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-agents-label">Key Agents</div>
+          <ul class="pc-agent-list">
+            <li>Claim Classification Agent</li>
+            <li>Coverage Verification Agent</li>
+            <li>Risk Scoring Agent</li>
+            <li>Fraud Signal Agent</li>
+            <li>Severity &amp; Payout Agent</li>
+            <li>Orchestrator Decision Agent</li>
+            <li>Payment Calculation Agent</li>
+            <li>Subrogation Detection Agent</li>
+            <li>Closure Checklist Agent</li>
+            <li>Reserve Recommendation Agent</li>
+            <li>Segmentation / Triage Agent</li>
+            <li>Investigation Case Agent</li>
+            <li>Litigation Management Agent</li>
+            <li>Denial / Closure / Partial Approval Letter Agents</li>
+          </ul>
+        </div>
+        <div class="pc-footer"><strong>Live Integration:</strong> Guidewire ClaimCenter (bidirectional) · Duck Creek Claims · Compliance Audit, Governance Gate &amp; Assignment Routing</div>
       </div>
     </div>
   </div>
@@ -422,10 +459,10 @@ footer p{font-size:.8rem;color:var(--text-dim);line-height:1.8}
 <!-- STATS BAND -->
 <div class="stats-band">
   <div class="wrap">
-    <div class="sb-stat"><div class="sb-num">41+</div><div class="sb-lbl">Named AI Agents</div></div>
-    <div class="sb-stat"><div class="sb-num">75+</div><div class="sb-lbl">REST API Endpoints</div></div>
+    <div class="sb-stat"><div class="sb-num">49</div><div class="sb-lbl">Named AI Agents</div></div>
+    <div class="sb-stat"><div class="sb-num">160+</div><div class="sb-lbl">REST API Endpoints</div></div>
     <div class="sb-stat"><div class="sb-num">6</div><div class="sb-lbl">Integration Adapters</div></div>
-    <div class="sb-stat"><div class="sb-num">7</div><div class="sb-lbl">Platform-Level Agents</div></div>
+    <div class="sb-stat"><div class="sb-num">3</div><div class="sb-lbl">Platforms w/ Governance Gate</div></div>
     <div class="sb-stat"><div class="sb-num">3</div><div class="sb-lbl">Deployment Models</div></div>
     <div class="sb-stat"><div class="sb-num">0</div><div class="sb-lbl">Core Changes Required</div></div>
   </div>
@@ -435,15 +472,15 @@ footer p{font-size:.8rem;color:var(--text-dim);line-height:1.8}
 <section id="agents" style="background:var(--bg)">
   <div class="wrap">
     <span class="s-label">Agent Catalog</span>
-    <h2 class="s-head">41+ Specialized AI Agents — <span>Every One Self-Equipped</span></h2>
+    <h2 class="s-head">49 Specialized AI Agents — <span>Every One Self-Equipped</span></h2>
     <div class="divider"></div>
-    <p class="s-sub">Every KGA ARIA agent is <strong>self-equipped</strong>: it carries its own Claude AI prompt, structured output schema, and error handling. Each agent is independently callable as a microservice.</p>
+    <p class="s-sub">Every KGA ARIA agent is <strong>self-equipped</strong>: it carries its own Claude AI prompt, structured output schema, and error handling. Each agent is independently callable as a microservice. Alongside the 49 AI agents, each platform is backed by shared, deterministic infrastructure — governance gate, write-back queue, RBAC, audit logging — detailed in the Cross-Platform tab below.</p>
 
     <div class="pipeline-wrap">
       <div class="pipeline-title">ARIA Claims · Core Pipeline</div>
       <div class="pipeline-head">6-Agent Sequential Claims Assessment Pipeline</div>
       <div class="pipeline-steps">
-        <div class="pipe-step"><div class="pipe-num pipe-n1">1</div><div class="pipe-name">FNOL Intake Agent</div><div class="pipe-desc">Receives First Notice of Loss, triages and structures the claim for downstream agents</div></div>
+        <div class="pipe-step"><div class="pipe-num pipe-n1">1</div><div class="pipe-name">Claim Classification Agent</div><div class="pipe-desc">Receives First Notice of Loss, classifies and structures the claim for downstream agents</div></div>
         <div class="pipe-step"><div class="pipe-num pipe-n2">2</div><div class="pipe-name">Coverage Verification Agent</div><div class="pipe-desc">Gates the claim: policy active, covered peril, exclusions, sub-limits</div></div>
         <div class="pipe-step"><div class="pipe-num pipe-n3">3</div><div class="pipe-name">Risk Scoring Agent</div><div class="pipe-desc">Scores 0–100 with risk level, specific factors, exposure estimate</div></div>
         <div class="pipe-step"><div class="pipe-num pipe-n4">4</div><div class="pipe-name">Fraud Signal Agent</div><div class="pipe-desc">Detects fraud probability, signals with evidence, SIU referral flag</div></div>
@@ -454,10 +491,10 @@ footer p{font-size:.8rem;color:var(--text-dim);line-height:1.8}
 
     <div style="margin-top:48px">
       <div class="agent-tabs">
-        <button class="agent-tab active" data-group="platform" onclick="switchTab('platform')">🌐 Platform Level (7)</button>
-        <button class="agent-tab" data-group="claims" onclick="switchTab('claims')">⚡ ARIA Claims (16)</button>
-        <button class="agent-tab" data-group="policy" onclick="switchTab('policy')">📋 ARIA Policy (8)</button>
-        <button class="agent-tab" data-group="billing" onclick="switchTab('billing')">💳 ARIA Billing (10)</button>
+        <button class="agent-tab active" data-group="platform" onclick="switchTab('platform')">🌐 Cross-Platform (2)</button>
+        <button class="agent-tab" data-group="policy" onclick="switchTab('policy')">📋 ARIA Policy (14)</button>
+        <button class="agent-tab" data-group="billing" onclick="switchTab('billing')">💳 ARIA Billing (15)</button>
+        <button class="agent-tab" data-group="claims" onclick="switchTab('claims')">⚡ ARIA Claims (18)</button>
       </div>
 
       <div class="agent-panel active" id="panel-platform">
@@ -465,15 +502,13 @@ footer p{font-size:.8rem;color:var(--text-dim);line-height:1.8}
           <table class="agent-table">
             <thead><tr><th>#</th><th>Agent Name</th><th>What It Does</th><th>Scope</th></tr></thead>
             <tbody>
-              <tr><td>01</td><td><span class="agent-name">Multi-Provider LLM Router</span></td><td>Routes all agent calls to Claude (Anthropic), Azure OpenAI, or OpenAI — all agents stay provider-agnostic</td><td><span class="ptag ptag-platform">All Platforms</span></td></tr>
-              <tr><td>02</td><td><span class="agent-name">Prompt Cache &amp; Memory Agent</span></td><td>Manages Claude's ephemeral prompt caching across all platforms — reduces latency and cost on repeated system prompts</td><td><span class="ptag ptag-platform">All Platforms</span></td></tr>
-              <tr><td>03</td><td><span class="agent-name">Multi-Tenant Context Agent</span></td><td>Scopes every AI output, cache entry, and user decision to the correct tenant — complete data isolation across organizations</td><td><span class="ptag ptag-platform">All Platforms</span></td></tr>
-              <tr><td>04</td><td><span class="agent-name">Guidewire Event Normalizer</span></td><td>Normalizes incoming ClaimCenter, PolicyCenter, and BillingCenter webhook events into KGA's canonical format</td><td><span class="ptag ptag-platform">All Platforms</span></td></tr>
-              <tr><td>05</td><td><span class="agent-name">Duck Creek Event Normalizer</span></td><td>Normalizes Duck Creek Claims, Policy, and Billing webhook events into KGA's canonical format</td><td><span class="ptag ptag-platform">All Platforms</span></td></tr>
-              <tr><td>06</td><td><span class="agent-name">Audit &amp; Decision Logger</span></td><td>Captures every AI decision with user context, tenant scope, and timestamp — produces explainable, auditable records</td><td><span class="ptag ptag-platform">All Platforms</span></td></tr>
-              <tr><td>07</td><td><span class="agent-name">Debate &amp; Consensus Agent</span></td><td>Multi-agent debate engine — synthesises conflicting perspectives to produce a consensus judgment on complex claims</td><td><span class="ptag ptag-platform">All Platforms</span></td></tr>
+              <tr><td>01</td><td><span class="agent-name">Natural-Language BI Agent</span></td><td>Computes real, deterministic aggregate facts across Claims, Policy, and Billing in-memory data, then hands only those verified numbers to Claude with an explicit no-invented-figures instruction — grounded book-of-business Q&amp;A</td><td><span class="ptag ptag-platform">All Platforms</span></td></tr>
+              <tr><td>02</td><td><span class="agent-name">Customer 360 Narrative Agent</span></td><td>Same grounded-facts pattern as the Natural-Language BI Agent — synthesizes a household-level risk/retention narrative from real cross-platform account data, with an explicit no-invented-figures instruction</td><td><span class="ptag ptag-platform">All Platforms</span></td></tr>
             </tbody>
           </table>
+        </div>
+        <div style="margin-top:20px;padding:16px 20px;background:var(--bg2);border:1px solid rgba(16,185,129,.15);border-radius:10px;font-size:.83rem;color:var(--text-mid)">
+          <strong style="color:var(--green-lt)">Shared Platform Infrastructure</strong> (deterministic, not LLM-based, running under every one of the 49 agents above): Generalized Governance Gate — a single, tenant-isolated approval-queue implementation used by Claims, Policy, and Billing, so every AI decision above a carrier-configured threshold routes to a supervisor before any write-back. Generalized Write-back Queue — one implementation across all three platforms, delivering approved AI outputs back to the core system via Guidewire REST note, Azure Service Bus, or local audit queue. Enterprise RBAC &amp; Multi-Tenant Isolation. Guidewire &amp; Duck Creek event adapters (one per platform, six total). Compliance Audit trail and async Event Bus. Cross-platform Customer 360 account lookup.
         </div>
       </div>
 
@@ -482,7 +517,7 @@ footer p{font-size:.8rem;color:var(--text-dim);line-height:1.8}
           <table class="agent-table">
             <thead><tr><th>#</th><th>Agent Name</th><th>What It Delivers</th><th>Endpoint</th></tr></thead>
             <tbody>
-              <tr><td>01</td><td><span class="agent-name">FNOL Intake &amp; Triage Agent</span></td><td>Receives First Notice of Loss, classifies claim type and initial severity, structures data for downstream pipeline agents</td><td><span class="ep">POST /api/v1/claims/classify</span></td></tr>
+              <tr><td>01</td><td><span class="agent-name">Claim Classification Agent</span></td><td>Classifies free-text First Notice of Loss into claim type, severity, and next steps — structures data for downstream pipeline agents</td><td><span class="ep">POST /api/v1/claims/classify</span></td></tr>
               <tr><td>02</td><td><span class="agent-name">Coverage Verification Agent</span></td><td>Verifies coverage eligibility: policy active on loss date, covered peril, exclusions triggered, sub-limits applicable</td><td><span class="ep">GET /api/v1/claims/{id}/coverage</span></td></tr>
               <tr><td>03</td><td><span class="agent-name">Risk Scoring Agent</span></td><td>Scores 0–100 with risk level (Low/Medium/High), specific risk factors with weighting, and estimated dollar exposure</td><td><span class="ep">POST /api/v1/claims/assess</span></td></tr>
               <tr><td>04</td><td><span class="agent-name">Fraud Signal Agent</span></td><td>Detects fraud probability with named signals, confidence scores, evidence citations, and SIU referral recommendation</td><td><span class="ep">POST /api/v1/claims/assess</span></td></tr>
@@ -490,16 +525,21 @@ footer p{font-size:.8rem;color:var(--text-dim);line-height:1.8}
               <tr><td>06</td><td><span class="agent-name">Orchestrator Decision Agent</span></td><td>Synthesises all upstream agents → final decision (Auto Approve / Manual Review / Escalate to SIU / Deny), priority, assignment, action plan</td><td><span class="ep">POST /api/v1/claims/assess</span></td></tr>
               <tr><td>07</td><td><span class="agent-name">Claim Narrative Agent</span></td><td>Generates concise AI narrative for the adjuster dashboard — risk reason, key finding, recommended action in 3–4 lines</td><td><span class="ep">GET /api/v1/claims/{id}</span></td></tr>
               <tr><td>08</td><td><span class="agent-name">Structured Analysis Agent</span></td><td>Produces full structured JSON analysis via Claude tool_use — summary, fraud indicators, adjuster notes, confidence</td><td><span class="ep">GET /api/v1/claims/{id}/full</span></td></tr>
-              <tr><td>09</td><td><span class="agent-name">Payment Calculation Agent</span></td><td>Calculates net payable: min(gross, limit) minus deductible, depreciation, prior payments — with payment breakdown by payee</td><td><span class="ep">GET /api/v1/claims/{id}/settlement</span></td></tr>
+              <tr><td>09</td><td><span class="agent-name">Payment Calculation Agent</span></td><td>Calculates net payable: min(gross, limit) minus deductible, depreciation, prior payments — with payment breakdown by payee and reserve adequacy check</td><td><span class="ep">GET /api/v1/claims/{id}/settlement</span></td></tr>
               <tr><td>10</td><td><span class="agent-name">Subrogation Detection Agent</span></td><td>Identifies third-party recovery opportunity, liable party type, recovery estimate range, and recommended action</td><td><span class="ep">GET /api/v1/claims/{id}/settlement</span></td></tr>
               <tr><td>11</td><td><span class="agent-name">Closure Checklist Agent</span></td><td>Verifies claim ready to close: payments issued, documents received, reserves zeroed, reopen risk assessment</td><td><span class="ep">GET /api/v1/claims/{id}/closure</span></td></tr>
               <tr><td>12</td><td><span class="agent-name">Denial Letter Agent</span></td><td>Regulatory-compliant denial letter with specific policy section citations, appeal rights, and provincial regulatory notices</td><td><span class="ep">POST /api/v1/claims/{id}/letter</span></td></tr>
               <tr><td>13</td><td><span class="agent-name">Closure Letter Agent</span></td><td>Settlement confirmation and claim closure letter — confirms amount paid, thanks claimant, notes reopen conditions</td><td><span class="ep">POST /api/v1/claims/{id}/letter</span></td></tr>
               <tr><td>14</td><td><span class="agent-name">Partial Approval Letter Agent</span></td><td>Approves covered portions, explains excluded portions with policy citations, includes appeal rights for denied items</td><td><span class="ep">POST /api/v1/claims/{id}/letter</span></td></tr>
-              <tr><td>15</td><td><span class="agent-name">Reserve Adequacy Agent</span></td><td>Assesses reserve adequacy (Adequate/Insufficient/Excess) and recommends reserve adjustment amount</td><td><span class="ep">GET /api/v1/claims/{id}/settlement</span></td></tr>
-              <tr><td>16</td><td><span class="agent-name">Next Best Action Agent</span></td><td>Determines the optimal next workflow action based on risk, fraud, and decision context — routes to auto-process, adjuster, or SIU</td><td><span class="ep">GET /api/v1/claims/{id}</span></td></tr>
+              <tr><td>15</td><td><span class="agent-name">Reserve Recommendation Agent</span></td><td>Computes a real reserve-adequacy baseline from incurred/paid data, then recommends Increase/Maintain/Decrease with an adequacy call and rationale</td><td><span class="ep">GET /api/v1/claims/{id}/reserve-recommendation</span></td></tr>
+              <tr><td>16</td><td><span class="agent-name">Segmentation / Triage Agent</span></td><td>Classifies each claim into an operational routing tier (Fast-Track/Standard/Complex/SIU-Track) independent of the core pipeline, with recommended queue and estimated handling days</td><td><span class="ep">GET /api/v1/claims/{id}/segmentation</span></td></tr>
+              <tr><td>17</td><td><span class="agent-name">Investigation Case Agent</span></td><td>Builds an internal case plan — evidence checklist, EUO scheduling recommendation, escalation status, case priority</td><td><span class="ep">GET /api/v1/claims/{id}/investigation</span></td></tr>
+              <tr><td>18</td><td><span class="agent-name">Litigation Management Agent</span></td><td>Assesses litigation risk from financial/fraud signals, recommends a settlement authority range, and flags outside-counsel referral criteria</td><td><span class="ep">GET /api/v1/claims/{id}/litigation</span></td></tr>
             </tbody>
           </table>
+        </div>
+        <div style="margin-top:20px;padding:16px 20px;background:var(--bg2);border:1px solid rgba(16,185,129,.15);border-radius:10px;font-size:.83rem;color:var(--text-mid)">
+          <strong style="color:var(--green-lt)">Also included (deterministic, not LLM-based):</strong> real-time Assignment &amp; Workload routing — adjuster capacity, specialty match, and SLA-based, computed from live data rather than an LLM guess — and a Rung-0 batch/flat-file adapter for carriers without a live API connection.
         </div>
       </div>
 
@@ -508,19 +548,25 @@ footer p{font-size:.8rem;color:var(--text-dim);line-height:1.8}
           <table class="agent-table">
             <thead><tr><th>#</th><th>Agent Name</th><th>What It Delivers</th><th>Endpoint</th></tr></thead>
             <tbody>
-              <tr><td>01</td><td><span class="agent-name">Senior P&amp;C Risk Analyst Agent</span> <span class="ptag ptag-policy">3-Agent Crew</span></td><td>Quantifies renewal risk exposure: justifies risk rating, identifies top 3 risk drivers ranked by severity, flags mandatory referrals</td><td><span class="ep">POST /api/v1/policies/{id}/crew-analysis</span></td></tr>
-              <tr><td>02</td><td><span class="agent-name">Underwriting Specialist Agent</span> <span class="ptag ptag-policy">3-Agent Crew</span></td><td>Coverage adequacy assessment (Adequate/Marginal/Insufficient), coverage gaps, recommended endorsements, exact premium adjustment %</td><td><span class="ep">POST /api/v1/policies/{id}/crew-analysis</span></td></tr>
-              <tr><td>03</td><td><span class="agent-name">Renewal Decision Manager Agent</span> <span class="ptag ptag-policy">3-Agent Crew</span></td><td>Final underwriting decision (Renew / Conditional / Non-Renewal / Refer to Senior Underwriter), broker communication paragraph, next steps</td><td><span class="ep">POST /api/v1/policies/{id}/crew-analysis</span></td></tr>
-              <tr><td>04</td><td><span class="agent-name">Submission Analysis Agent</span></td><td>Risk-tiers new submissions: Preferred / Standard / Non-Standard / Declined — with conditions, key concerns, and ordered next steps</td><td><span class="ep">POST /api/v1/lifecycle/submission</span></td></tr>
-              <tr><td>05</td><td><span class="agent-name">Policy Structured Analysis Agent</span></td><td>Structured renewal analysis: summary, renewal recommendation, premium change %, coverage gaps, underwriting concerns, confidence</td><td><span class="ep">GET /api/v1/policies/{id}/full</span></td></tr>
-              <tr><td>06</td><td><span class="agent-name">Endorsement Analysis Agent</span></td><td>Analyses endorsement impact on coverage, premium change (±%), underwriting approval requirement, and professional narrative for the broker</td><td><span class="ep">POST /api/v1/lifecycle/{id}/endorse</span></td></tr>
-              <tr><td>07</td><td><span class="agent-name">Cancellation Assessment Agent</span></td><td>Evaluates cancellation: method (pro-rata / short-rate), return premium calculation, earned premium, reinstatement eligibility assessment</td><td><span class="ep">POST /api/v1/lifecycle/{id}/cancel</span></td></tr>
-              <tr><td>08</td><td><span class="agent-name">Policy Narrative Agent</span></td><td>Concise underwriter dashboard narrative — renewal recommendation, key flags, and recommended action in 3–4 professional lines</td><td><span class="ep">GET /api/v1/policies/{id}</span></td></tr>
+              <tr><td>01</td><td><span class="agent-name">Senior P&amp;C Risk Analyst Agent</span> <span class="ptag ptag-policy">4-Agent Crew</span></td><td>Quantifies renewal risk exposure: justifies risk rating, identifies top 3 risk drivers ranked by severity, flags mandatory referrals</td><td><span class="ep">POST /api/v1/policies/{id}/crew-analysis</span></td></tr>
+              <tr><td>02</td><td><span class="agent-name">Underwriting Specialist Agent</span> <span class="ptag ptag-policy">4-Agent Crew</span></td><td>Coverage adequacy assessment (Adequate/Marginal/Insufficient), coverage gaps, recommended endorsements, exact premium adjustment %</td><td><span class="ep">POST /api/v1/policies/{id}/crew-analysis</span></td></tr>
+              <tr><td>03</td><td><span class="agent-name">Renewal Decision Manager Agent</span> <span class="ptag ptag-policy">4-Agent Crew</span></td><td>Final underwriting decision (Renew / Conditional / Non-Renewal / Refer to Senior Underwriter), broker communication paragraph, next steps</td><td><span class="ep">POST /api/v1/policies/{id}/crew-analysis</span></td></tr>
+              <tr><td>04</td><td><span class="agent-name">Underwriting Fraud Referral Agent</span> <span class="ptag ptag-policy">4-Agent Crew</span></td><td>Screens for SIU referral: reviews fraud indicators surfaced by the crew and recommends escalation with supporting rationale</td><td><span class="ep">POST /api/v1/policies/{id}/crew-analysis</span></td></tr>
+              <tr><td>05</td><td><span class="agent-name">Submission Risk Assessment Agent</span></td><td>Risk-tiers new submissions: Preferred / Standard / Non-Standard / Declined — with conditions, key concerns, and ordered next steps</td><td><span class="ep">POST /api/v1/lifecycle/submission</span></td></tr>
+              <tr><td>06</td><td><span class="agent-name">Policy Structured Analysis Agent</span></td><td>Structured renewal analysis: summary, renewal recommendation, premium change %, coverage gaps, underwriting concerns, confidence</td><td><span class="ep">GET /api/v1/policies/{id}/full</span></td></tr>
+              <tr><td>07</td><td><span class="agent-name">Endorsement Impact Agent</span></td><td>Analyses endorsement impact on coverage, premium change (±%), underwriting approval requirement, and professional narrative for the broker</td><td><span class="ep">POST /api/v1/lifecycle/{id}/endorse</span></td></tr>
+              <tr><td>08</td><td><span class="agent-name">Cancellation Assessment Agent</span></td><td>Evaluates cancellation: method (pro-rata / short-rate), return premium calculation, earned premium, reinstatement eligibility assessment</td><td><span class="ep">POST /api/v1/lifecycle/{id}/cancel</span></td></tr>
+              <tr><td>09</td><td><span class="agent-name">Policy Narrative Agent</span></td><td>Concise underwriter dashboard narrative — renewal recommendation, key flags, and recommended action in 3–4 professional lines</td><td><span class="ep">GET /api/v1/policies/{id}</span></td></tr>
+              <tr><td>10</td><td><span class="agent-name">Rate Rationale Agent</span></td><td>Explains why a submission landed at its rate/tier in broker-communication language, citing the actual surcharge/discount schedule</td><td><span class="ep">POST /api/v1/lifecycle/quote</span></td></tr>
+              <tr><td>11</td><td><span class="agent-name">Reinstatement Agent</span></td><td>Narrates the lapse reinstatement eligibility determination, backdating implications, and conditions</td><td><span class="ep">POST /api/v1/lifecycle/{id}/reinstate</span></td></tr>
+              <tr><td>12</td><td><span class="agent-name">Renewal Retention &amp; Cross-Sell Agent</span></td><td>Scores retention risk and surfaces a directional coverage-gap/cross-sell opportunity grounded in the account's real loss history</td><td><span class="ep">GET /api/v1/policies/{id}/retention</span></td></tr>
+              <tr><td>13</td><td><span class="agent-name">Regulatory Filing Compliance Agent</span></td><td>Plain-language pre-review checklist for rate/form filing compliance by jurisdiction and line of business</td><td><span class="ep">GET /api/v1/policies/{id}/filing-compliance</span></td></tr>
+              <tr><td>14</td><td><span class="agent-name">Product Eligibility &amp; Placement Agent</span></td><td>Recommends a market placement tier (Preferred/Standard/E&amp;S) with rationale from loss ratio, claims history, and SIU flag</td><td><span class="ep">GET /api/v1/policies/{id}/product-eligibility</span></td></tr>
             </tbody>
           </table>
         </div>
         <div style="margin-top:20px;padding:16px 20px;background:var(--bg2);border:1px solid rgba(16,185,129,.15);border-radius:10px;font-size:.83rem;color:var(--text-mid)">
-          <strong style="color:var(--green-lt)">Policy Lifecycle State Machine (LangGraph):</strong> Submission → Quote → Underwriting → Bound → Issued → Endorsed / Cancelled / Reinstated. The 3-agent crew runs within the Underwriting stage.
+          <strong style="color:var(--green-lt)">Policy Lifecycle State Machine (LangGraph):</strong> Submission → Quote → Underwriting → Bound → Issued → Endorsed / Cancelled / Reinstated. The 4-agent crew runs within the Underwriting stage. <strong style="color:var(--green-lt)">Also included (deterministic, not LLM-based):</strong> automated Declarations Page generation — instant, templated output requiring no LLM call.
         </div>
       </div>
 
@@ -539,6 +585,11 @@ footer p{font-size:.8rem;color:var(--text-dim);line-height:1.8}
               <tr><td>08</td><td><span class="agent-name">Dunning &amp; Retention Agent</span></td><td>Day-30/60/90 dunning schedule, retention risk tier and score, recommended save offer, estimated save probability</td><td><span class="ep">POST /api/v1/billing/{id}/dunning-retention</span></td></tr>
               <tr><td>09</td><td><span class="agent-name">Billing Narrative Agent</span></td><td>3–4 line AI narrative for the billing dashboard — collections risk, outstanding balance context, recommended immediate action</td><td><span class="ep">GET /api/v1/billing/{id}</span></td></tr>
               <tr><td>10</td><td><span class="agent-name">Billing Structured Analysis Agent</span></td><td>Full structured collections analysis via Claude tool_use: risk level, payment plan suggestion, risk indicators, cancellation escalation flag</td><td><span class="ep">GET /api/v1/billing/{id}/full</span></td></tr>
+              <tr><td>11</td><td><span class="agent-name">Premium Audit Agent</span></td><td>Compares the estimated premium basis against an audited exposure figure and computes additional/return premium with variance severity</td><td><span class="ep">POST /api/v1/billing/{id}/premium-audit</span></td></tr>
+              <tr><td>12</td><td><span class="agent-name">Invoice Scheduling &amp; Billing Plan Agent</span></td><td>Recommends billing-plan/schedule changes (frequency, autopay) from real payment method and delinquency history</td><td><span class="ep">POST /api/v1/billing/{id}/billing-schedule</span></td></tr>
+              <tr><td>13</td><td><span class="agent-name">Refund &amp; Return Premium Agent</span></td><td>Validates a proposed return-premium figure against real paid/outstanding amounts, nets any debt, and flags discrepancies</td><td><span class="ep">POST /api/v1/billing/{id}/refund</span></td></tr>
+              <tr><td>14</td><td><span class="agent-name">Escheatment / Unclaimed Property Agent</span></td><td>Flags stale credit balances for unclaimed-property due diligence and escheatment based on real dormancy signals</td><td><span class="ep">GET /api/v1/billing/{id}/escheatment</span></td></tr>
+              <tr><td>15</td><td><span class="agent-name">Payment Method Risk Agent</span></td><td>Proactively scores NSF/chargeback risk of a proposed payment-method change from real payment history</td><td><span class="ep">POST /api/v1/billing/{id}/payment-method-risk</span></td></tr>
             </tbody>
           </table>
         </div>
@@ -575,9 +626,9 @@ footer p{font-size:.8rem;color:var(--text-dim);line-height:1.8}
       <div class="deploy-card">
         <div class="deploy-icon">🌐</div>
         <h3>Enterprise Suite</h3>
-        <p>All three ARIA platforms run as a unified intelligence layer covering the full policy lifecycle — submission through claims closure and collections recovery. 41+ agents, 75+ endpoints.</p>
+        <p>All three ARIA platforms run as a unified intelligence layer covering the full policy lifecycle — submission through claims closure and collections recovery. 49 agents, 160+ endpoints.</p>
         <div class="deploy-tags">
-          <span class="dtag">41+ Agents</span><span class="dtag">Full Lifecycle</span><span class="dtag">All Integrations</span><span class="dtag">Unified Dashboard</span>
+          <span class="dtag">49 Agents</span><span class="dtag">Full Lifecycle</span><span class="dtag">All Integrations</span><span class="dtag">Unified Dashboard</span>
         </div>
       </div>
     </div>
@@ -587,10 +638,10 @@ footer p{font-size:.8rem;color:var(--text-dim);line-height:1.8}
         <thead><tr><th>Scope</th><th>Agents</th><th>Endpoints</th><th>Best For</th><th>Time to Deploy</th></tr></thead>
         <tbody>
           <tr><td><strong style="color:var(--text)">Single Agent</strong></td><td>1</td><td>1</td><td>Point solution, proof-of-concept</td><td>Hours</td></tr>
-          <tr><td><strong style="color:var(--text)">ARIA Claims Only</strong></td><td>16 + 7 platform</td><td>30+</td><td>Claims-focused insurer or TPA</td><td>Days</td></tr>
-          <tr><td><strong style="color:var(--text)">ARIA Policy Only</strong></td><td>8 + 7 platform</td><td>30+</td><td>MGA or underwriting shop</td><td>Days</td></tr>
-          <tr><td><strong style="color:var(--text)">ARIA Billing Only</strong></td><td>10 + 7 platform</td><td>20+</td><td>Billing-focused team</td><td>Days</td></tr>
-          <tr><td><strong style="color:var(--text)">Full KGA ARIA</strong></td><td>41+</td><td>75+</td><td>Enterprise insurer, full lifecycle AI</td><td>Weeks</td></tr>
+          <tr><td><strong style="color:var(--text)">ARIA Policy Only</strong></td><td>14 + shared infra</td><td>45</td><td>MGA or underwriting shop</td><td>Days</td></tr>
+          <tr><td><strong style="color:var(--text)">ARIA Billing Only</strong></td><td>15 + shared infra</td><td>35</td><td>Billing-focused team</td><td>Days</td></tr>
+          <tr><td><strong style="color:var(--text)">ARIA Claims Only</strong></td><td>18 + shared infra</td><td>62</td><td>Claims-focused insurer or TPA</td><td>Days</td></tr>
+          <tr><td><strong style="color:var(--text)">Full KGA ARIA</strong></td><td>49</td><td>160+</td><td>Enterprise insurer, full lifecycle AI</td><td>Weeks</td></tr>
         </tbody>
       </table>
     </div>
@@ -622,11 +673,11 @@ footer p{font-size:.8rem;color:var(--text-dim);line-height:1.8}
           <span class="padapter">Policy Adapter ✓</span>
           <span class="padapter">Billing Adapter ✓</span>
           <span class="padapter">Webhook Normalizer ✓</span>
-          <span class="padapter">OAuth 2.0 (Keystone) ✓</span>
+          <span class="padapter">OAuth 2.0 (Keystone) — Unified Read + Write ✓</span>
           <span class="padapter">HMAC Webhook Auth ✓</span>
           <span class="padapter">MCP Bridge — 24 Tools ✓</span>
           <span class="padapter">Live Data Adapter ✓</span>
-          <span class="padapter">Write-back Queue ✓</span>
+          <span class="padapter">Write-back Queue (all 3 platforms) ✓</span>
           <span class="padapter">Unified Extractor ✓</span>
         </div>
       </div>
@@ -653,6 +704,7 @@ footer p{font-size:.8rem;color:var(--text-dim);line-height:1.8}
           <span class="padapter">REST Webhook</span>
           <span class="padapter">Canonical Format</span>
           <span class="padapter">Custom Adapter</span>
+          <span class="padapter">Rung-0 Batch / Flat-File Adapter</span>
         </div>
       </div>
       <div class="partner-card">
@@ -715,18 +767,19 @@ footer p{font-size:.8rem;color:var(--text-dim);line-height:1.8}
         <div class="tech-item">Guidewire Live Data Adapter — bidirectional sync</div>
         <div class="tech-item">Guidewire Write-back Queue — structured result return</div>
         <div class="tech-item">Guidewire Unified Extractor — multi-module data</div>
-        <div class="tech-item">Guidewire Cloud API v2 — OAuth 2.0 + HMAC webhooks</div>
+        <div class="tech-item">Guidewire Cloud API v2 — OAuth 2.0 + HMAC webhooks, shared by both the read and write-back paths</div>
         <div class="tech-item">Duck Creek webhook adapters — 3 modules</div>
         <div class="tech-item">Claude prompt caching — cost &amp; latency</div>
       </div>
-      <div class="tech-card">
-        <span class="tech-label">Deployment &amp; Marketplace</span>
-        <div class="tech-item">Azure App Service — live, confirmed operational</div>
-        <div class="tech-item">Azure Marketplace SaaS — Starter / Pro / Enterprise</div>
+      <div class="tech-card" style="border-color:rgba(0,120,212,.3);background:rgba(0,120,212,.05)">
+        <span class="tech-label" style="color:#60b8ff">Deployment &amp; Marketplace</span>
+        <div class="tech-item" style="color:#6ee7b7;font-weight:600">✓ Azure Marketplace — LIVE (July 2026)</div>
+        <div class="tech-item" style="color:#ffb347;font-weight:600">● AWS Marketplace — infrastructure complete, listing pending</div>
+        <div class="tech-item">Azure App Service — deployed and operational</div>
         <div class="tech-item">Azure Metering API — per-agent-call usage billing</div>
-        <div class="tech-item">AWS / GCP — compatible</div>
-        <div class="tech-item">On-premise WSGI/ASGI — supported</div>
-        <div class="tech-item">Docker-ready — containerizable</div>
+        <div class="tech-item">AWS App Runner + SNS/Metering/Entitlement integrated</div>
+        <div class="tech-item">AWS CDK — 11 infrastructure-as-code stacks (networking, compute, auth, storage, AI, marketplace, monitoring, security)</div>
+        <div class="tech-item">On-premise / Docker — supported</div>
       </div>
       <div class="tech-card">
         <span class="tech-label">Enterprise Features</span>
@@ -735,7 +788,8 @@ footer p{font-size:.8rem;color:var(--text-dim);line-height:1.8}
         <div class="tech-item">Event Bus — async agent-to-agent messaging</div>
         <div class="tech-item">Monitoring dashboard — agent health &amp; latency</div>
         <div class="tech-item">Compliance Audit — every AI decision validated</div>
-        <div class="tech-item">Governance Gate — approval layer before surfacing</div>
+        <div class="tech-item">Governance Gate — tenant-isolated approval layer, generalized across Claims, Policy &amp; Billing</div>
+        <div class="tech-item">Write-back Queue — generalized across all 3 platforms, OAuth2-secured</div>
       </div>
     </div>
   </div>
@@ -762,16 +816,24 @@ footer p{font-size:.8rem;color:var(--text-dim);line-height:1.8}
         <h4>AI &amp; Agentic Systems</h4>
         <span class="cred-pill">ADASCI AI Certified</span>
         <span class="cred-pill">GSDC AI Certified</span>
-        <span class="cred-pill">Anthropic Partner</span>
+        <span class="cred-pill">Anthropic Startup Partner</span>
         <span class="cred-pill">Azure AI Partner</span>
       </div>
       <div class="cred-card">
         <span class="cred-icon">🌍</span>
         <h4>Ecosystem &amp; Cloud</h4>
         <span class="cred-pill">Microsoft Cloud AI Partner</span>
+        <span class="cred-pill">Microsoft Startup Partner</span>
+        <span class="cred-pill">AWS Activate Partner</span>
+        <span class="cred-pill">Google Startup Partner</span>
         <span class="cred-pill">Azure Certified</span>
         <span class="cred-pill">Women-Majority Owned</span>
         <span class="cred-pill">DEI Grant Eligible</span>
+      </div>
+      <div class="cred-card">
+        <span class="cred-icon">🤝</span>
+        <h4>Core Platform Partnerships</h4>
+        <span class="cred-pill">Guidewire &amp; Duck Creek Formal Partnership — In Progress</span>
       </div>
     </div>
   </div>
@@ -781,7 +843,7 @@ footer p{font-size:.8rem;color:var(--text-dim);line-height:1.8}
 <section id="traction" style="background:var(--bg2)">
   <div class="wrap">
     <span class="s-label">Traction &amp; Milestones</span>
-    <h2 class="s-head">From Incorporation to <span>Azure-Live, Marketplace-Ready</span> — Under 12 Months</h2>
+    <h2 class="s-head">From Incorporation to <span>Azure Marketplace Live</span> — Under 12 Months</h2>
     <div class="divider"></div>
     <div class="timeline">
       <div class="tl-item">
@@ -821,23 +883,31 @@ footer p{font-size:.8rem;color:var(--text-dim);line-height:1.8}
         <div class="tl-date">Q1 2026</div>
         <div>
           <div class="tl-title">ARIA Policy &amp; ARIA Billing — Full Platform Launched <span class="tl-badge tl-done">✓ Complete</span></div>
-          <div class="tl-desc">ARIA Policy (3-agent underwriting crew, LangGraph lifecycle) and ARIA Billing (8 specialized agents) shipped. 26+ agents live.</div>
+          <div class="tl-desc">ARIA Policy (underwriting crew, LangGraph lifecycle) and ARIA Billing (10 specialized agents) shipped.</div>
         </div>
       </div>
       <div class="tl-item">
         <div class="tl-dot done"></div>
         <div class="tl-date">Q2 2026</div>
         <div>
-          <div class="tl-title">41+ Agent Platform — Enterprise Suite Complete <span class="tl-badge tl-done">✓ Complete</span></div>
-          <div class="tl-desc">Full expansion to 41 named AI agents across all three platforms plus 7 platform-level agents. Guidewire and Duck Creek adapters built and tested. Platform deployed on Azure.</div>
+          <div class="tl-title">49-Agent Platform — Enterprise Suite Complete <span class="tl-badge tl-done">✓ Complete</span></div>
+          <div class="tl-desc">Full expansion to 49 named AI agents across all three platforms. Guidewire and Duck Creek adapters built and tested. Platform deployed on Azure.</div>
         </div>
       </div>
       <div class="tl-item">
         <div class="tl-dot done"></div>
         <div class="tl-date">JUNE 2026</div>
         <div>
-          <div class="tl-title">Azure App Service Live · Guidewire MCP Bridge · Azure Marketplace Ready <span class="tl-badge tl-done">✓ Complete</span></div>
-          <div class="tl-desc">Azure App Service deployment confirmed operational. Guidewire MCP Bridge shipped — 24 tools exposing ClaimCenter, PolicyCenter, and BillingCenter to Claude via MCP protocol. Azure Marketplace SaaS listing ready with Starter / Professional / Enterprise plans and per-agent-call metering. Dedicated Guidewire Cloud API v2 auth module (OAuth 2.0 Keystone + HMAC-SHA256 webhook signature validation).</div>
+          <div class="tl-title">Azure App Service Live · Guidewire MCP Bridge · Azure Marketplace Submitted <span class="tl-badge tl-done">✓ Complete</span></div>
+          <div class="tl-desc">Azure App Service deployment confirmed operational. Guidewire MCP Bridge shipped — 24 tools exposing ClaimCenter, PolicyCenter, and BillingCenter to Claude via MCP protocol. Azure Marketplace SaaS listing submitted with Starter / Professional / Enterprise plans and per-agent-call metering. Dedicated Guidewire Cloud API v2 auth module (OAuth 2.0 Keystone + HMAC-SHA256 webhook signature validation).</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot done"></div>
+        <div class="tl-date">JULY 2026</div>
+        <div>
+          <div class="tl-title">Azure Marketplace LIVE · AWS Marketplace Integration Built <span class="tl-badge tl-done">✓ Complete</span></div>
+          <div class="tl-desc">KGA ARIA is now <strong>live on the Microsoft commercial marketplace</strong> — purchasable by any Azure enterprise customer worldwide. Microsoft Cloud AI Partner status confirmed. AWS Marketplace integration built (SNS lifecycle, BatchMeterUsage, GetEntitlements, AWS App Runner deployment, 11-stack CDK infrastructure) — public listing finalising tax and payout setup ahead of launch.</div>
         </div>
       </div>
       <div class="tl-item">
@@ -846,6 +916,14 @@ footer p{font-size:.8rem;color:var(--text-dim);line-height:1.8}
         <div>
           <div class="tl-title">Guidewire Bidirectional Live Sync · Compliance Audit · Governance Gate <span class="tl-badge tl-done">✓ Complete</span></div>
           <div class="tl-desc">Guidewire Live Data Adapter deployed — real-time bidirectional data flow between ARIA and ClaimCenter/PolicyCenter/BillingCenter. Write-back Queue enables structured AI outputs to return to Guidewire automatically. Unified Extractor consolidates multi-module Guidewire data in a single call. Compliance Audit engine and Governance Gate added to ARIA Claims — every AI decision now runs through a policy compliance check and governance approval layer before surfacing to adjusters. Test suite established. Platform production-hardened for enterprise onboarding.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot done"></div>
+        <div class="tl-date">JULY 2026</div>
+        <div>
+          <div class="tl-title">Governance Gate &amp; Write-back Queue Generalized Platform-Wide <span class="tl-badge tl-done">✓ Complete</span></div>
+          <div class="tl-desc">The tenant-isolated Governance Gate and Write-back Queue, previously Claims-only, are now shared infrastructure used by Policy and Billing as well — every AI decision above a carrier-configured threshold across all three platforms routes to a supervisor before write-back, with each tenant's approval queue fully isolated from every other tenant's. Guidewire Cloud API v2 OAuth 2.0 now authenticates both the read and write-back paths. Added Assignment &amp; Workload routing (Claims), automated Declarations Page generation (Policy), a cross-platform Customer 360 lookup, and a grounded Natural-Language BI agent for book-of-business Q&amp;A.</div>
         </div>
       </div>
       <div class="tl-item">
@@ -883,23 +961,23 @@ footer p{font-size:.8rem;color:var(--text-dim);line-height:1.8}
       <div class="ask-col">
         <h4>What We Bring</h4>
         <ul>
-          <li>41+ production-ready AI agents powered by <strong>claude-sonnet-4-6 (Anthropic)</strong></li>
+          <li>49 production-ready AI agents powered by <strong>claude-sonnet-4-6 (Anthropic)</strong></li>
           <li>Guidewire bidirectional live sync — Live Data Adapter, Write-back Queue, Unified Extractor</li>
           <li>Guidewire MCP Bridge — 24 tools across ClaimCenter, PolicyCenter, BillingCenter</li>
-          <li>Compliance Audit engine &amp; Governance Gate — every AI decision policy-validated before surfacing</li>
-          <li>Azure Marketplace SaaS listing — Starter / Professional / Enterprise plans with metered billing</li>
+          <li>Compliance Audit engine &amp; Governance Gate — tenant-isolated, generalized across all 3 platforms, every AI decision policy-validated before surfacing</li>
+          <li><strong style="color:#6ee7b7">Azure Marketplace — LIVE</strong> · Starter / Professional / Enterprise plans with metered billing · <a href="https://marketplace.microsoft.com/en-us/product/krishconguideagenticsolutionsinc1780178255021.kga-aria-platform?tab=Overview" style="color:var(--amber);text-decoration:none">View listing →</a></li>
+          <li><strong style="color:#ffb347">AWS Marketplace — infrastructure complete, listing pending</strong> · SNS, Metering, Entitlement APIs fully integrated, 11-stack CDK deployment</li>
           <li>Enterprise auth: JWT + Azure AD, RBAC, multi-tenant isolation</li>
           <li>30+ years of P&amp;C insurance domain expertise</li>
-          <li>Anthropic Claude partner + Microsoft Cloud AI partner ecosystems</li>
-          <li>Azure App Service — deployed and operational today</li>
+          <li>Anthropic Startup Partner + Microsoft Cloud AI Partner + Microsoft Startup Partner + AWS Activate Partner + Google Startup Partner + dual-marketplace distribution</li>
         </ul>
       </div>
       <div class="ask-col">
         <h4>What We're Seeking</h4>
         <ul>
           <li>First pilot customer — P&amp;C insurer, MGA, or TPA</li>
-          <li>Formal Guidewire Marketplace partnership agreement</li>
-          <li>Formal Duck Creek Exchange partnership agreement</li>
+          <li>Formal Guidewire Marketplace partnership agreement <span class="tl-badge tl-prog" style="font-size:.65rem">In Progress</span></li>
+          <li>Formal Duck Creek Exchange partnership agreement <span class="tl-badge tl-prog" style="font-size:.65rem">In Progress</span></li>
           <li>Strategic investors aligned to InsurTech / AI</li>
           <li>Distribution partnerships with system integrators</li>
           <li>Access to production claims / policy data for fine-tuning</li>
@@ -919,7 +997,7 @@ footer p{font-size:.8rem;color:var(--text-dim);line-height:1.8}
 <footer>
   <div class="wrap">
     <p><strong>KGA ARIA</strong> — AI Intelligence Layer for Insurance Operations</p>
-    <p>Krishcon Guide Agentic Solutions Inc. &nbsp;·&nbsp; AI Powered by <strong style="color:var(--purple-lt)">Claude Sonnet 4.6 (Anthropic)</strong> &nbsp;·&nbsp; Hosted on <strong style="color:var(--blue-lt)">Microsoft Azure</strong> &nbsp;·&nbsp; &copy; 2026 KGA. All rights reserved.</p>
+    <p>Krishcon Guide Agentic Solutions Inc. &nbsp;·&nbsp; AI Powered by <strong style="color:var(--purple-lt)">Claude Sonnet 4.6 (Anthropic)</strong> &nbsp;·&nbsp; <strong style="color:#60b8ff">Azure Marketplace Live</strong> &nbsp;·&nbsp; <strong style="color:#ffb347">AWS Marketplace Listing Pending</strong> &nbsp;·&nbsp; &copy; 2026 KGA. All rights reserved.</p>
     <p style="margin-top:8px;font-size:.72rem">Guidewire and Duck Creek are trademarks of their respective owners. KGA ARIA is an independent intelligence layer — not affiliated with, endorsed by, or replacing any core platform.</p>
   </div>
 </footer>
@@ -935,3 +1013,4 @@ function switchTab(group) {
 
 </body>
 </html>
+
