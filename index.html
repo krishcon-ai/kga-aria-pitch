@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>KGA ARIA — AI Intelligence Layer for Insurance Operations</title>
-<meta name="description" content="KGA ARIA embeds 49 specialized AI agents powered by Anthropic Claude into policy, billing, and claims operations — with a 5-vendor PAS Integration Hub (Guidewire, Duck Creek, Majesco, Insurity, Socotra), enterprise-grade encryption and tamper-evident audit logging, and zero core system changes.">
+<meta name="description" content="KGA ARIA embeds 49 specialized AI agents powered by Anthropic Claude into policy, billing, and claims operations — with a 5-vendor PAS Integration Hub (Guidewire, Duck Creek, Majesco, Insurity, Socotra), a control-plane governance layer with human-in-the-loop review, outage-resilient write-back, enterprise-grade encryption and tamper-evident audit logging, and zero core system changes.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -274,7 +274,7 @@ footer p{font-size:.8rem;color:var(--text-dim);line-height:1.8}
     <h1>The <em>AI Intelligence Layer</em><br>for Insurance Operations</h1>
     <div class="hero-sub-head">Not replacing your core platform. Making it dramatically smarter.</div>
     <p class="hero-desc">
-      KGA ARIA embeds <strong>49 specialized AI agents</strong> — powered by <strong style="color:#a78bfa">Anthropic Claude</strong> — into policy underwriting, billing collections, and claims adjudication, backed by a tenant-isolated governance gate, PostgreSQL-persisted compliance audit trail, and write-back layer shared across all three platforms. A 5-vendor PAS Integration Hub connects Guidewire, Duck Creek, Majesco, Insurity, and Socotra with zero changes to your core system.
+      KGA ARIA embeds <strong>49 specialized AI agents</strong> — powered by <strong style="color:#a78bfa">Anthropic Claude</strong> — into policy underwriting, billing collections, and claims adjudication, backed by a tenant-isolated governance gate, PostgreSQL-persisted compliance audit trail, and write-back layer shared across all three platforms. Every agent action runs through a control-plane envelope — identity, scope, policy gate, evidence, confidence, disposition — with human-in-the-loop review on anything above threshold, and a resilient write-back path that survives a core-system outage. A 5-vendor PAS Integration Hub connects Guidewire, Duck Creek, Majesco, Insurity, and Socotra with zero changes to your core system.
     </p>
     <div class="hero-actions">
       <a href="#platform" class="btn btn-primary">Explore the Platform</a>
@@ -783,10 +783,34 @@ footer p{font-size:.8rem;color:var(--text-dim);line-height:1.8}
     <span class="s-label">Enterprise Readiness</span>
     <h2 class="s-head">Built for Regulated Data. <span>Hardened for Production.</span></h2>
     <div class="divider"></div>
-    <p class="s-sub">The July 2026 build cycle closed the gap between "AI demo" and "carrier-deployable software": every tenant's data is isolated at the read layer, sensitive fields are encrypted, every AI decision is chained into a tamper-evident audit log, and the platform has a documented disaster-recovery posture with a live status probe.</p>
+    <p class="s-sub">The July 2026 build cycle closed the gap between "AI demo" and "carrier-deployable software": every tenant's data is isolated at the read layer, sensitive fields are encrypted, every AI decision is chained into a tamper-evident audit log, a control-plane envelope makes every agent action explainable and human-reviewable, the write-back path survives a core-system outage, and the platform has a documented disaster-recovery posture with a live status probe.</p>
 
     <div class="deploy-grid">
       <div class="deploy-card featured">
+        <div class="deploy-icon">🛰️</div>
+        <h3>Control Plane — Every Decision Shows Its Work</h3>
+        <p>Every agent action is rendered through one envelope: identity → scope → policy gate → evidence → confidence → disposition. Behind it sits a versioned workflow registry — each crew (renewal underwriting, FNOL-to-reserve, commission review, dunning &amp; retention, premium audit) carries a version number, an approval status, and a last-validated date, so what's running in production is always traceable to what was approved.</p>
+        <div class="deploy-tags">
+          <span class="dtag">Identity → Scope → Policy Gate → Evidence → Confidence → Disposition</span><span class="dtag">Versioned Workflow Registry</span><span class="dtag">Approval Status Tracked</span>
+        </div>
+      </div>
+      <div class="deploy-card featured">
+        <div class="deploy-icon">🧭</div>
+        <h3>Human-in-the-Loop Trust &amp; Governance</h3>
+        <p>A dedicated supervisor queue holds any AI decision above a carrier-configured threshold for human review before write-back, and an audit-verify surface lets a compliance reviewer reconstruct and defend any past decision on demand. The platform is built to know when to stop — and to prove why it stopped.</p>
+        <div class="deploy-tags">
+          <span class="dtag">Supervisor Approval Queue</span><span class="dtag">Audit-Verify Reconstruction</span><span class="dtag">Threshold-Based Escalation</span>
+        </div>
+      </div>
+      <div class="deploy-card featured">
+        <div class="deploy-icon">🌩️</div>
+        <h3>Resilience — Survives a Bad Day</h3>
+        <p>When a PAS or core-system connection drops mid-event, the governed write-back parks in a dead-letter queue instead of failing silently, and automatically retries once connectivity returns — tested against simulated Guidewire, Duck Creek, Majesco, Insurity, and Socotra outages, not just described in a runbook.</p>
+        <div class="deploy-tags">
+          <span class="dtag">Dead-Letter Queue</span><span class="dtag">Automatic Retry on Reconnect</span><span class="dtag">Simulated-Outage Tested</span>
+        </div>
+      </div>
+      <div class="deploy-card">
         <div class="deploy-icon">🔐</div>
         <h3>Field Encryption &amp; Hash-Chained Audit</h3>
         <p>Sensitive fields are encrypted at the persistence boundary. Every compliance-audit entry is linked into a cryptographic hash chain — tamper-evident by construction — with a 365-day retention policy.</p>
@@ -821,9 +845,9 @@ footer p{font-size:.8rem;color:var(--text-dim);line-height:1.8}
       <div class="deploy-card">
         <div class="deploy-icon">🔑</div>
         <h3>Production-Grade Authentication</h3>
-        <p>Sub-platform APIs require a valid JWT in production and staging. Startup validation, DB-readiness reporting, and webhook signature enforcement close the gaps between a local demo and a customer-facing deployment.</p>
+        <p>Sub-platform APIs require a valid JWT in production and staging, with hybrid support for Microsoft Entra ID tokens alongside JWT/demo-gate auth. Startup validation, DB-readiness reporting, and webhook signature enforcement close the gaps between a local demo and a customer-facing deployment.</p>
         <div class="deploy-tags">
-          <span class="dtag">JWT-Enforced APIs</span><span class="dtag">Startup Validation</span><span class="dtag">Webhook Signing</span>
+          <span class="dtag">JWT-Enforced APIs</span><span class="dtag">Entra ID Hybrid Auth</span><span class="dtag">Webhook Signing</span>
         </div>
       </div>
       <div class="deploy-card">
@@ -835,6 +859,7 @@ footer p{font-size:.8rem;color:var(--text-dim);line-height:1.8}
         </div>
       </div>
     </div>
+    <p style="font-size:.8rem;color:var(--text-dim);margin-top:8px">A carrier can check this posture live, not just take it on faith — <span class="ep">/api/v1/platform/production-readiness</span>, <span class="ep">/api/v1/platform/dr-status</span>, and <span class="ep">/api/v1/platform/audit-policy</span> are self-auditing endpoints, not marketing claims.</p>
   </div>
 </section>
 
@@ -861,15 +886,19 @@ footer p{font-size:.8rem;color:var(--text-dim);line-height:1.8}
         <div class="tech-item">CrewAI — multi-agent crew orchestration</div>
         <div class="tech-item">LangGraph — policy lifecycle state machine</div>
         <div class="tech-item">Azure OpenAI — alternate provider</div>
+        <div class="tech-item">Automatic LLM failover (Claude ↔ Azure OpenAI) with configurable guardrails</div>
+        <div class="tech-item">RAG-grounded knowledge corpus — Natural-Language BI and Customer 360 agents cite verified facts, not invented figures</div>
+        <div class="tech-item">Pipeline checkpointing &amp; session memory — durable, resumable agent workflows</div>
       </div>
       <div class="tech-card">
         <span class="tech-label">Security &amp; Identity</span>
         <div class="tech-item">JWT (python-jose) — token-based auth, enforced in production/staging</div>
         <div class="tech-item">bcrypt — password hashing</div>
-        <div class="tech-item">Azure AD (OpenID Connect) — enterprise SSO</div>
+        <div class="tech-item">Microsoft Entra ID hybrid auth — accepts Entra tokens alongside JWT/demo-gate credentials</div>
         <div class="tech-item">Fernet field-level encryption at the persistence boundary</div>
         <div class="tech-item">SHA-256 hash-chained audit log — tamper-evident, 365-day retention</div>
         <div class="tech-item">Tenant-filtered data access — JWT-scoped reads across Claims, Policy, Billing</div>
+        <div class="tech-item">Application Insights — production observability</div>
       </div>
       <div class="tech-card">
         <span class="tech-label">Integration &amp; Data</span>
@@ -901,8 +930,12 @@ footer p{font-size:.8rem;color:var(--text-dim);line-height:1.8}
         <div class="tech-item">Monitoring dashboard — agent health &amp; latency</div>
         <div class="tech-item">Compliance Audit — PostgreSQL-persisted, every AI decision validated</div>
         <div class="tech-item">Governance Gate — tenant-isolated approval layer, generalized across Claims, Policy &amp; Billing, Postgres-backed</div>
+        <div class="tech-item">Control Plane — identity/scope/policy-gate/evidence/confidence/disposition envelope backed by a versioned, approved workflow registry</div>
+        <div class="tech-item">Trust &amp; Governance — human-in-the-loop supervisor queue plus an audit-verify surface to reconstruct any past decision</div>
+        <div class="tech-item">Resilience — dead-letter queue with automatic retry for write-backs interrupted by a core-system outage</div>
         <div class="tech-item">Write-back Queue — generalized across all 3 platforms, OAuth2-secured, PostgreSQL-persisted</div>
         <div class="tech-item">Disaster Recovery — Azure Postgres Flexible Server PITR backups, documented runbook, live readiness probe</div>
+        <div class="tech-item">Self-auditing readiness APIs — production-readiness, DR-status, and audit-policy probes a carrier can check live</div>
         <div class="tech-item">CI/CD gates — ruff lint, CodeQL, Dependabot on every Azure deploy</div>
       </div>
     </div>
@@ -1057,6 +1090,22 @@ footer p{font-size:.8rem;color:var(--text-dim);line-height:1.8}
         </div>
       </div>
       <div class="tl-item">
+        <div class="tl-dot done"></div>
+        <div class="tl-date">JULY 11, 2026</div>
+        <div>
+          <div class="tl-title">Guided Walkthrough, Control Plane &amp; Trust Governance <span class="tl-badge tl-done">✓ Complete</span></div>
+          <div class="tl-desc">Shipped the Guided Walkthrough as a live briefing surface — it loads real mount status for ARIA Policy, Billing, and Claims and probes live stats APIs, rather than presenting a static slide deck. Added a Control Plane envelope (identity → scope → policy gate → evidence → confidence → disposition) backed by a versioned, approved workflow registry across all five core crews. Added a Trust &amp; Governance surface — human-in-the-loop supervisor queue plus audit-verify decision reconstruction — and a Resilience panel that simulates a PAS/core connectivity drop and proves the governed write-back recovers via dead-letter queue and automatic retry. Expanded ARIA Billing decision engines: dedicated commission-review, premium-audit, and enhanced dunning &amp; retention logic.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot done"></div>
+        <div class="tl-date">JULY 14, 2026</div>
+        <div>
+          <div class="tl-title">P0 Agentic Hardening — LLM Failover, RAG Grounding &amp; Checkpoints <span class="tl-badge tl-done">✓ Complete</span></div>
+          <div class="tl-desc">Closed the remaining production-readiness gaps identified in the July partner audit: automatic LLM failover between Claude and Azure OpenAI with configurable guardrails, a RAG-grounded knowledge corpus underpinning the Natural-Language BI and Customer 360 agents, and durable pipeline checkpointing so long-running agent workflows survive a restart. CI hardened with gated static-analysis scanning and knowledge-corpus tracking so retrieval-grounding tests run reliably.</div>
+        </div>
+      </div>
+      <div class="tl-item">
         <div class="tl-dot progress"></div>
         <div class="tl-date">H2 2026 TARGET</div>
         <div>
@@ -1096,6 +1145,8 @@ footer p{font-size:.8rem;color:var(--text-dim);line-height:1.8}
           <li>Guidewire bidirectional live sync — Live Data Adapter, Write-back Queue, Unified Extractor, MCP Bridge (24 tools)</li>
           <li>Field encryption &amp; hash-chained, tamper-evident audit logging — 365-day retention</li>
           <li>Tenant isolation enforced at the data layer, plus PostgreSQL-persisted Compliance Audit &amp; Governance Gate — every AI decision policy-validated before surfacing</li>
+          <li>Control-plane governance on every AI action — identity → scope → policy gate → evidence → confidence → disposition — backed by a versioned, approved workflow registry, with human-in-the-loop review and audit-verify decision reconstruction</li>
+          <li>Resilience-tested against core-system outages — dead-letter queue with automatic retry; automatic LLM failover (Claude ↔ Azure OpenAI) with configurable guardrails</li>
           <li>Documented disaster-recovery posture — Azure Postgres PITR backups, runbook, live RPO/RTO status</li>
           <li><strong style="color:#6ee7b7">Azure Marketplace — LIVE</strong> · Starter / Professional / Enterprise plans with metered billing · <a href="https://marketplace.microsoft.com/en-us/product/krishconguideagenticsolutionsinc1780178255021.kga-aria-platform?tab=Overview" style="color:var(--amber);text-decoration:none">View listing →</a></li>
           <li><strong style="color:#ffb347">AWS Marketplace — infrastructure complete, listing pending</strong> · SNS, Metering, Entitlement APIs fully integrated, 11-stack CDK deployment</li>
