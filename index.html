@@ -124,6 +124,28 @@ nav{position:sticky;top:0;z-index:100;background:rgba(15,17,23,.92);backdrop-fil
 .solution .ps-icon{background:rgba(5,150,105,.15);color:var(--green-lt)}
 .ps-item p{font-size:.85rem;color:var(--text-mid);line-height:1.6}
 
+/* ── OUTCOME & VALUE ── */
+.outcome-stats{display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:rgba(13,148,136,.15);border:1px solid rgba(13,148,136,.2);border-radius:10px;overflow:hidden;margin-bottom:28px}
+.oc-stat{background:#0a1f1c;padding:20px 14px;text-align:center}
+.oc-num{font-family:'Montserrat',sans-serif;font-size:22px;font-weight:800;color:var(--teal-lt);margin-bottom:4px}
+.oc-lbl{font-size:.66rem;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.4px;line-height:1.4}
+.class-legend{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.class-pill{display:flex;align-items:center;gap:7px;border:1px solid var(--border);border-radius:20px;padding:7px 14px;font-size:.75rem;color:var(--text-mid);background:rgba(255,255,255,.03)}
+.class-pill b{color:var(--text);font-weight:700}
+.value-split{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:28px}
+.vsplit-card{border-radius:var(--radius);padding:22px}
+.vsplit-card.capacity{background:rgba(37,99,235,.06);border:1px solid rgba(37,99,235,.2)}
+.vsplit-card.harddollar{background:rgba(5,150,105,.06);border:1px solid rgba(5,150,105,.2)}
+.vsplit-head{font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;margin-bottom:10px}
+.vsplit-card.capacity .vsplit-head{color:var(--blue-lt)}
+.vsplit-card.harddollar .vsplit-head{color:var(--green-lt)}
+.vsplit-card p{font-size:.84rem;color:var(--text-mid);line-height:1.65}
+.cat-box{background:rgba(201,168,76,.05);border:1px solid rgba(201,168,76,.25);border-radius:var(--radius);padding:26px;margin-bottom:24px}
+.cat-box-label{font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--amber);margin-bottom:10px}
+.cat-formula{font-family:'Montserrat',sans-serif;font-size:.8rem;color:var(--text-mid);background:rgba(0,0,0,.2);border-radius:6px;padding:12px 16px;margin:12px 0;display:inline-block}
+.cat-formula b{color:var(--amber)}
+.cat-box p{font-size:.84rem;color:var(--text-mid);line-height:1.7;margin-bottom:0}
+
 /* ── PLATFORM ── */
 .platform-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:32px}
 .pc{border-radius:var(--radius);border:1px solid var(--border);overflow:hidden;background:var(--bg2)}
@@ -259,8 +281,8 @@ footer p{font-size:.8rem;color:var(--text-dim);line-height:1.8}
   .wrap,.nav-inner{width:min(100% - 40px,760px)}
   .hero-grid{grid-template-columns:1fr;gap:30px}
   .status-groups{grid-template-columns:1fr}
-  .hero-stats,.stats-band .wrap{grid-template-columns:repeat(3,1fr)}
-  .platform-grid,.ps-grid,.tech-grid,.cred-grid{grid-template-columns:1fr}
+  .hero-stats,.stats-band .wrap,.outcome-stats{grid-template-columns:repeat(3,1fr)}
+  .platform-grid,.ps-grid,.tech-grid,.cred-grid,.value-split{grid-template-columns:1fr}
   .partners-grid,.deploy-grid{grid-template-columns:1fr 1fr}
   .how-flow{grid-template-columns:1fr 1fr}
   .pipeline-steps{grid-template-columns:repeat(3,1fr)}
@@ -270,7 +292,7 @@ footer p{font-size:.8rem;color:var(--text-dim);line-height:1.8}
 @media(max-width:600px){
   .wrap,.nav-inner{width:min(100% - 28px,560px)}
   .partners-grid,.deploy-grid,.how-flow,.pipeline-steps{grid-template-columns:1fr}
-  .hero-stats,.stats-band .wrap{grid-template-columns:repeat(2,1fr)}
+  .hero-stats,.stats-band .wrap,.outcome-stats{grid-template-columns:repeat(2,1fr)}
   .badges-row{flex-direction:column}
   .tl-item{grid-template-columns:18px 1fr}
   .tl-date{display:none}
@@ -287,6 +309,7 @@ footer p{font-size:.8rem;color:var(--text-dim);line-height:1.8}
       <div class="nav-logo-text">KGA ARIA</div>
     </a>
     <div class="nav-links">
+      <a href="#outcome">Outcome &amp; Value</a>
       <a href="#platform">Platform</a>
       <a href="#intelligence">Intelligence</a>
       <a href="#agents">Catalog</a>
@@ -364,6 +387,53 @@ footer p{font-size:.8rem;color:var(--text-dim);line-height:1.8}
         <div class="ps-item"><div class="ps-icon">✓</div><p>Repeatable lifecycle evaluations exercise normal, adverse, duplicate, timeout, conflict, and accepted-then-later-rejected conditions</p></div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ OUTCOME & VALUE ══════════════════════════ -->
+<section id="outcome" style="background:var(--bg)">
+  <div class="wrap">
+    <span class="s-label" style="color:var(--teal-lt)">Outcome &amp; Value</span>
+    <h2 class="s-head">Measured in <span>Hours Released and Dollars Validated</span></h2>
+    <div class="divider"></div>
+    <p class="s-sub">The business case is built on operating capacity, not capability counts. Capacity — hours or throughput released — is never counted as cash. A figure enters the hard-dollar column only when a named realization path exists: overtime not paid, a contractor not hired, a role not backfilled. Figures below are illustrative demo data, not a measured customer result.</p>
+
+    <div class="outcome-stats">
+      <div class="oc-stat"><div class="oc-num">3,820</div><div class="oc-lbl">Hours Released, YTD</div></div>
+      <div class="oc-stat"><div class="oc-num">$241K</div><div class="oc-lbl">Validated Hard Dollar</div></div>
+      <div class="oc-stat"><div class="oc-num">4.8d → 11h</div><div class="oc-lbl">Time to Decision</div></div>
+      <div class="oc-stat"><div class="oc-num">−31%</div><div class="oc-lbl">Exception Handling Time</div></div>
+      <div class="oc-stat"><div class="oc-num">316</div><div class="oc-lbl">Authority Escalations Routed</div></div>
+      <div class="oc-stat"><div class="oc-num">0</div><div class="oc-lbl">Unauthorized Writes</div></div>
+    </div>
+
+    <div class="value-split">
+      <div class="vsplit-card capacity">
+        <div class="vsplit-head">Capacity</div>
+        <p>Staff hours or throughput released because ARIA shortened human minutes on an eligible workflow — operating leverage and surge-absorption potential, not a booked saving on its own.</p>
+      </div>
+      <div class="vsplit-card harddollar">
+        <div class="vsplit-head">Hard Dollar</div>
+        <p>Explicit avoided spend finance can book. Counted only when a named realization path exists, and reported separately by validation status — never blended into one unlabeled total.</p>
+      </div>
+    </div>
+
+    <div class="class-legend">
+      <div class="class-pill"><b>Hard Dollar</b> — contractor, overtime, hiring, vendor spend</div>
+      <div class="class-pill"><b>Capacity</b> — hours / throughput released, not cash</div>
+      <div class="class-pill"><b>Revenue &amp; Retention</b> — conversion, cancellation, retention</div>
+      <div class="class-pill"><b>Claims &amp; Loss</b> — recovery, leakage, severity; excluded from ROI until finance-validated</div>
+      <div class="class-pill"><b>Strategic</b> — experience, resilience, auditability; not monetized</div>
+    </div>
+
+    <div class="cat-box">
+      <div class="cat-box-label">Illustrative — Catastrophe Surge Scenario</div>
+      <p>A Florida property-weighted book takes 25,000 incremental CAT claims after a hurricane. ARIA screens every inbound claim and routes prioritized, routine, complex, and missing-evidence queues to adjusters — manager exceptions only, no autonomous settlement, system of record unchanged.</p>
+      <div class="cat-formula">25,000 claims × 0.5 hrs released × <b>$70</b>/hr loaded rate = <b>$875,000</b> capacity value</div>
+      <p>At a 35% hard-dollar realization factor (overtime and temporary-staffing potential): <strong style="color:var(--amber)">$306,250</strong> illustrative cash-equivalent — not a booked saving until a carrier's own data validates it, and not a named-account result.</p>
+    </div>
+
+    <p class="disclosure">KGA ARIA works alongside native core-platform AI rather than competing with it — the more automated touchpoints a core system adds, the more this cross-domain measurement and governance layer matters. Carrier-specific volumes, rates, and realization assumptions are established during discovery. <a href="mailto:rakesh.sharma@krishcons.com?subject=KGA ARIA Value Cockpit Walkthrough" style="color:var(--teal-lt);text-decoration:none">Request a walkthrough of the Value Realization cockpit →</a></p>
   </div>
 </section>
 
